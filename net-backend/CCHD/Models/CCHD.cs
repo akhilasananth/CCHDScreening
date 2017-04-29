@@ -22,6 +22,7 @@ namespace CCHD.Models
 
         public DbSet<CchdDecline> CchdDeclineId { get; set; }
         public DbSet<Screen> ScreenId { get; set; }
+        public Hopital HospitalId { get; set; }
 
     }
 }
