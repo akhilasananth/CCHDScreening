@@ -9,6 +9,11 @@ namespace NetAlertsWeb.Models.ViewModels
 {
     public class BTaskManagerViewModel
     {
+        BTaskManagerViewModel()
+        {
+            
+        }
+
         public ApplicationUser ApplicationUser { get; set; }
 
         [Display(Name = "Birth date and time: ")]
@@ -16,6 +21,12 @@ namespace NetAlertsWeb.Models.ViewModels
 
         public string PatientIdentificationNumber { get; set; }
 
+        public List<BTaskHour> BTaskHours { get; private set; }
+        public List<BTaskRefer> BTaskRefers { get; private set; }
+        public List<BTaskInitial> BTaskInitials { get; private set; }
+
+        
+        
        
     }
 }
