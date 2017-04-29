@@ -7,5 +7,12 @@ namespace NetAlertsWeb.Models
 {
     public class BTaskInitial
     {
+        public int BTaskInitialId { get; set; }
+
+        public BStatus BStatus { get; set; } = BStatus.Future;
+
+        public DateTime DateTimeCreated { get; set; }
+
+        
     }
 }

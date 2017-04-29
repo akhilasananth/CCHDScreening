@@ -9,10 +9,15 @@ namespace NetAlertsWeb.Models
     public class BTaskManager
     {
         public int BTaskManagerId { get; set; }
+        
+        // Todo Add reference here to get a patient Id.
 
         public BTaskPreScreen BTaskPreScreen { get; set; }
         public virtual List<BTaskHour> BTaskHours { get; set; }
         public BTaskRefer BTaskRefer { get; set; }
+        
+        public DateTime DateTimeCreated { get; set; }
+        public DateTime DateTimePatientBirth { get; set; }
 
         // Create a new pre screen.
         public void OnPreScreen() { }
