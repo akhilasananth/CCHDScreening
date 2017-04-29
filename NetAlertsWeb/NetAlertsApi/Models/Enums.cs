@@ -10,6 +10,13 @@ namespace NetAlertsWeb.Models
         Future, // Task set for a future date.
         Ready, // Task is ready to be completed.
         NotCompleted, // Task was not completed.
-        Completed // Task is completed.
+        Resolved // Task is completed.
+    }
+
+    public enum BTypes
+    {
+        PreScreen,
+        Hour,
+        Refer,
     }
 }

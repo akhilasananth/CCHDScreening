@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NetAlertsApi.Models;
 
 namespace NetAlertsWeb.Models
 {
@@ -9,6 +10,8 @@ namespace NetAlertsWeb.Models
     public class BTaskManager
     {
         public int BTaskManagerId { get; set; }
+
+        public ApplicationUser ApplicationUser { get; set; }
         
         // Todo Add reference here to get a patient Id.
 

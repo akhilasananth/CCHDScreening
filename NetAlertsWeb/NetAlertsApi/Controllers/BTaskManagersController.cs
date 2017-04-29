@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,7 @@ namespace NetAlertsWeb.Controllers
         {
             if (id == null)
             {
+
                 return NotFound();
             }
 
@@ -54,15 +56,9 @@ namespace NetAlertsWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BTaskManagerId,DateTimeCreated,DateTimePatientBirth")] BTaskManager bTaskManager)
+        public async Task<IActionResult> Create()
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(bTaskManager);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-            return View(bTaskManager);
+
         }
 
         // GET: BTaskManagers/Edit/5
