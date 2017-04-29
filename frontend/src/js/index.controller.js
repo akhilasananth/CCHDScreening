@@ -18,6 +18,11 @@ var app = angular.module('ccdhApp',['ui.router']);
                             templateUrl:'../views/hospitalInfo/hospitalInfo.html',
                             controller:'indexCtrl'
                         })
+                        .state('/eligibility', {
+                            url:'/eligibility',
+                            templateUrl:'../views/Eligibility/eligibility.html',
+                            controller:'indexCtrl'
+                        })
                         
                         
             
