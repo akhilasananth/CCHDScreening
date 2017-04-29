@@ -20,7 +20,6 @@ namespace CCHD.Models
         public string City { get; set; }
         [Required]
         public int PhoneNumber { get; set; }
-
         
     }
 }
