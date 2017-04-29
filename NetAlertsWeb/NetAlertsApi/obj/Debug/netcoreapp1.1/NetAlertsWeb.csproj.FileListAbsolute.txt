@@ -1,0 +1,10 @@
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\bin\Debug\netcoreapp1.1\NetAlertsWeb.deps.json
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\bin\Debug\netcoreapp1.1\NetAlertsWeb.runtimeconfig.json
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\bin\Debug\netcoreapp1.1\NetAlertsWeb.runtimeconfig.dev.json
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\bin\Debug\netcoreapp1.1\NetAlertsWeb.dll
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\bin\Debug\netcoreapp1.1\NetAlertsWeb.pdb
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\obj\Debug\netcoreapp1.1\NetAlertsWeb.csprojResolveAssemblyReference.cache
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\obj\Debug\netcoreapp1.1\NetAlertsWeb.AssemblyInfo.cs
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\obj\Debug\netcoreapp1.1\NetAlertsWeb.dll
+C:\Code\201704HackingHealth\git\cchd\NetAlertsWeb\NetAlertsApi\obj\Debug\netcoreapp1.1\NetAlertsWeb.pdb

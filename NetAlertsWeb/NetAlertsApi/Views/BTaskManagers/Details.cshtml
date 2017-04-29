@@ -1,0 +1,30 @@
+@model NetAlertsWeb.Models.BTaskManager
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BTaskManager</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTimeCreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTimeCreated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTimePatientBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTimePatientBirth)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BTaskManagerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

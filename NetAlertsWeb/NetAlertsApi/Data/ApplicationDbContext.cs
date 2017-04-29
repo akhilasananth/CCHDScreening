@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NetAlertsApi.Models;
+using NetAlertsWeb.Models;
 
 namespace NetAlertsApi.Data
 {
@@ -22,5 +23,7 @@ namespace NetAlertsApi.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<NetAlertsWeb.Models.BTaskManager> BTaskManager { get; set; }
     }
 }
