@@ -1,30 +1,20 @@
-var gulp = require('gulp'),
+'use strict';
+const gulp = require('gulp');
+const browserSync = require('browser-sync');
+const ngAnnotate = require('gulp-ng-annotate');
+const sourcemaps = require("gulp-sourcemaps");
 
-browserSync = require('browser-sync');
-
-gulp.task('default', function() {
-
-console.log('Hello Gulp');
-
+gulp.task('serve', [], function () {
+    browserSync.init({
+        server: {
+            baseDir: 'src/'
+        }
+    });
+    gulp.watch('src/**/*.html', ['reload']);
+    gulp.watch('src/**/*.js', ['reload']);
+    gulp.watch(['src/**/*.css'], ['reload']);
 });
 
-gulp.task('watch', function (gulpCallback) {
-    browserSync.init({
-        server: './',
-        port:8081
-    }, function callback() {
-        // Monitor html and Javascript and reload browsers when it changes
-        gulp.watch('./index.html', browserSync.reload);
-
-        // watch css and stream to BrowserSync when it changes
-        gulp.watch('./css/*', function () {
-            // grab css files and send them into browserSync.stream
-            // this injects the css into the page
-            gulp.src('./css/*')
-                .pipe(browserSync.stream());
-        });
-
-        // notify gulp that this task is done
-        gulpCallback();
-    });
+gulp.task('reload', function () {
+    browserSync.reload();
 });
