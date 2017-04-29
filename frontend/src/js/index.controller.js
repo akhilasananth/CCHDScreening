@@ -1,4 +1,4 @@
-var app = angular.module('KitchAApp',['ui.router']);
+var app = angular.module('ccdhApp',['ui.router']);
         //app config
         app.config(function($stateProvider, $urlRouterProvider){
             $urlRouterProvider.otherwise('/home');
@@ -8,18 +8,21 @@ var app = angular.module('KitchAApp',['ui.router']);
                             templateUrl: '../views/homePage/home.html',
                             controller: 'indexCtrl'
                         })
-                        
-                        .state('/about', {
-                            url:'/about',
-                            templateUrl:'../views/aboutPage/about.html',
+                        .state('/babyInformation',{
+                            url:'/babyInformation',
+                            templateUrl: '../views/babyInformation/babyInformation.html',
                             controller:'indexCtrl'
                         })
-                        .state('/recipe',{
-                            url:'/recipe',
-                            templateUrl:'../views/recipe/recipe.html',
+                        .state('/hospitalInformation', {
+                            url:'/hospitalInformation',
+                            templateUrl:'../views/hospitalInfo/hospitalInfo.html',
                             controller:'indexCtrl'
-                        });
+                        })
+                        
                         
             
         });
+        app.controller('indexCtrl', function($scope){
+
+        })
        
