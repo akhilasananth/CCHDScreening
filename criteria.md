@@ -1,41 +1,3 @@
-# Impactful
-## Importance of the problem tackled
-## Extent of the impact the solution can have
-
-# Realistic
-## Demonstration of working prototype
-## Clear path to complete solution
-## Elaborate design of solution
-
-# Quality
-## Design, UI
-## Usability for target users
-## Quality of architecture
-## Realistic: fits user reality
-## Fits ecosystem of infrastructure
-## Sophisticated: more than a nice me too
-
-# Innovative
-## New technology, thinking, concepts
-## Eureka factor
-## Goes beyond other tried approaches
-## Distinctive characteristics
-## Elegance of solution
-
-# Promising
-## Really has potential
-## Can be adopted naturally and rapidly
-## Quality of the team
-## Level of insight the team has into how this would be used
-## If possible could become a business
-
-# Well Presented
-## Clear, succinct
-## Inspiring
-## Visual
-## Clear make audience understand the problem.
-
-
 # Presentation
 ## Background
 - Critical Congenital Heart Disease screening is a provincially funded
@@ -59,21 +21,9 @@
   newborn screening ontario. This delay means that an infant at risk
   for CCHD could be missed and potentially have a fatal outcome.
 
-
-
-
-
-
-
 ## Demonstration
 - Designed to be used by nurses and midwives in a hospital or community setting
 
-
-
-## Quality of architecture
-## Realistic: fits user reality
-## Fits ecosystem of infrastructure
-## Sophisticated: more than a nice me too
 ## DEMO
 - for team
 ## Quality
@@ -83,4 +33,42 @@
 - Alerts and status
 - Barcode scanning of Pulse Oximeter
 - Real-time evaluation of results and transmission of results to NSO database.
--
+
+
+# Scoring Metric
+## Impactful
+- Importance of the problem tackled
+- Extent of the impact the solution can have
+
+## Realistic
+- Demonstration of working prototype
+- Clear path to complete solution
+- Elaborate design of solution
+
+## Quality
+- Design, UI
+- Usability for target users
+- Quality of architecture
+- Realistic: fits user reality
+- Fits ecosystem of infrastructure
+- Sophisticated: more than a nice me too
+
+## Innovative
+- New technology, thinking, concepts
+- Eureka factor
+- Goes beyond other tried approaches
+- Distinctive characteristics
+- Elegance of solution
+
+## Promising
+- Really has potential
+- Can be adopted naturally and rapidly
+- Quality of the team
+- Level of insight the team has into how this would be used
+- If possible could become a business
+
+## Well Presented
+- Clear, succinct
+- Inspiring
+- Visual
+- Clear make audience understand the problem.
