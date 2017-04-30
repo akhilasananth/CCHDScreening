@@ -6,7 +6,8 @@
   "dependencies": {
     "bootstrap-material-design": "^0.5.10",
     "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "lockr": "^0.8.4"
   },
   "devDependencies": {},
   "scripts": {
