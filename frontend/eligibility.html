@@ -30,9 +30,6 @@
         }
     </style>
        <script>
-           $(document).ready(function() {
-
-           });
        </script>
    </head>
    <body>
@@ -74,7 +71,7 @@
                    <br>
                    <textarea name="paragraph_text" cols="50" rows="10"></textarea>
             </div>
-            <a href="repeat-test.html"><button type="button" class="btn btn-primary btn-block"ui-sref="/testRepeat">Next</button></a>
+            <button id="b1" type="button" class="btn btn-primary btn-block">Next</button>
             </form>
             <div class="modal fade" id="parentConsentModal" role="dialog">
                <div class="modal-dialog">
@@ -88,7 +85,7 @@
                         <p>Some text in the modal.</p>
                      </div>
                      <div class="modal-footer">
-                        <button id="button" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                      </div>
                   </div>
                </div>
@@ -111,16 +108,16 @@
                 $(".box").not(targetBox).hide();
                 $(targetBox).show();
             });
-            $("#button").onclick(function () {
-                if($('input:radio[name=eligible]')[0].checked){
 
-                }
-                else {
+                    $("#b1").click(function () {
+                        if($('input:radio[name=eligible]')[0].checked){
+                            window.location.href = "repeat-test.html";
+                        }
+                        else {
+                            window.location.href = "index.html";
+                        }
 
-                }
-
-            })
-
+                    })
         });
         </script>
    </body>
