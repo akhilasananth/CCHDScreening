@@ -48,14 +48,12 @@
             <form>
                <div class="form-group"> 
                   <label for="LName">Last Name</label>  
-                  <input type="text" name="babyLName">
+                  <input type="text" class="form-control" formname="babyLName">
                </div>
-               <br>
                <div class="form-group"> 
                   <label for="FName">First Name</label>  
-                  <input type="text" name="babyFName">
+                  <input type="text"  class="form-control" name="babyFName">
                 </div>
-               <br>
                <div class="form-group"> 
                   <label for="MBirth">Multiple Birth</label>
                <select>
@@ -68,12 +66,10 @@
                   <option value="F">F</option>
                </select>
                </div> 
-               <br>
                <div class="form-group"> 
                   <label for="HCard">Health Card Number</label>
                   <input type="text" class="form-control" data-mask="9999-999-999" placeholder="####-###-###">
                </div>   
-               <br>
                <div class="form-group">
                   <label for="Sex">Sex</label>
                <select>
@@ -81,12 +77,10 @@
                   <option value="Female">Female</option>
                </select>
                </div>
-               <br>
                <div class="form-group">
                   <label for=BDate>Birth Date</label>
-                  <input type="date" name="birthDate">
+                  <input type="date"  class="form-control" name="birthDate">
                </div>
-               <br>
                <div class="form-group">
                   <label for=BTime>Birth Time</label>
                   <div class="input-group clockpicker">
@@ -96,13 +90,11 @@
                       </span>
                   </div>
                </div>
-               <br>
                <div class="form-group">
                   <label for=SubmitterUID>Submitter Unique Number</label>
-                  <input type="text" name="submitterUniqueNumber">
+                  <input type="text"  class="form-control" name="submitterUniqueNumber">
                </div>
             </form>
-            <br>
             <a href="hospital-info.html"><button type="button" ui-sref="/hospitalInformation" class="btn btn-primary btn-block">Next</button></a>
          </div>
          <!-- /.container -->
