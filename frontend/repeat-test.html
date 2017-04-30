@@ -60,26 +60,27 @@
 
       <div class="container">
         <div class="page-header">
-          <h1>Initial Screen</h1>
+          <h1>Screening</h1>
         </div>
 
        <div class="row">
             <div class="col-sm-4">
                 <p>Time of screen</p>
-                <div class="input-group bootstrap-timepicker timepicker">
-                    <input id="timepicker1" type="text" class="form-control input-small">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-                </div>
-
+                
 
             </div>
             <div class="col-sm-4 control-group">
                 <form>
                     <div class="form-group">
-                        <label class="control-label input-label" for="R_hand">R Hand:</label>
-                        <input type="text" class="form-control" id="R_hand_id">
-                        <label>Foot:</label>
-                        <input type="text" class="form-control" id="foot_id">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Right Hand" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">%</span>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Foot" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">%</span>
+                        </div>
                     </div>
                 </form>
             </div>
