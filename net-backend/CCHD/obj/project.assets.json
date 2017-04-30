@@ -10261,10 +10261,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\201704HackingHealth\\ApiPrime\\CCHD\\CCHD\\CCHD.csproj",
+      "projectUniqueName": "C:\\Code\\201704HackingHealth\\git\\cchd\\net-backend\\CCHD\\CCHD.csproj",
       "projectName": "CCHD",
-      "projectPath": "C:\\Code\\201704HackingHealth\\ApiPrime\\CCHD\\CCHD\\CCHD.csproj",
-      "outputPath": "C:\\Code\\201704HackingHealth\\ApiPrime\\CCHD\\CCHD\\obj\\",
+      "projectPath": "C:\\Code\\201704HackingHealth\\git\\cchd\\net-backend\\CCHD\\CCHD.csproj",
+      "outputPath": "C:\\Code\\201704HackingHealth\\git\\cchd\\net-backend\\CCHD\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
