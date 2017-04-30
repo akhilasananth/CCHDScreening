@@ -6,18 +6,20 @@
 
 
 # Pitch
-* Provincial wide neonatal Critical Congenital Heart Disease Screening
-  uses hand written forms and snail mail to ensure that screening has
-  been completed and completed correctly.
+* Newborn Screening Ontario has started screening the 150,000 babies
+  born each year for Critical Congenital Heart Disease
+  Screening. Currently the program uses hand written forms and snail
+  mail to ensure that screening has been completed and completed
+  correctly. Errors in the current process can and do happen.
 
 * We have created a mobile application that:
-    * That replaces the paper forms
-    * Applies the screening algorithm in realtime
-    * Transmits the data back to a server
+    * Replaces the paper forms
+    * Applies the screening algorithm in real-time
+    * Can transmit the data back to a server at Newborn Screening Ontario.
 
 * We have also added:
-    * Tracking of nurse users and devices to assist in QA
-    * Alerts to ensure screens are done on time
+    * Tracking of users and devices to assist in quality assurance.
+    * Alerts to ensure screens are done on time.
 
 * Newborn Screening Ontario is funded by the Province of Ontario. They
   have resources to improve the current screening process via mobile
