@@ -1,4 +1,18 @@
+function initStorage() {
+    var screeings = [];
+    Lockr.set("screenings", screeings);
+}
+function addScreening(screeningObj) {
+    var screenings = Lockr.get("screenings");
+    screenings.push(screeningObj);
+}
+function Screening(rightHand) {
+    this.rightHand = rightHand;
+    this.foot = foot;
+    this.success = function () {
 
+    }
+}
 function Patient(lastName, firstName, healthCard, gender, dob, birthTime, submitterNumber) {
     this.lastName = lastName;
     this.firstName = firstName;
