@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class lang="en">
+   <!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>The Big Picture - Start Bootstrap Template</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/the-big-picture.css" rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script src="../node_modules/lockr/lockr.min.js"></script>
+      <link rel="stylesheet" href="src/lib/jasny-bootstrap/css/jasny-bootstrap.min.css">
+      <!-- Custom styles for this template -->
+      <link href="css/navmenu-reveal.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.css">
+
+   </head>
+   <body>
+      <div class="navmenu navmenu-inverse navmenu-default navmenu-fixed-left">
+         <a class="navmenu-brand" href="#">Critical Cogenital Heart Disease Screening System</a>
+         <ul class="nav navmenu-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Devices</a></li>
+         </ul>
+      </div>
+      <div class="canvas">
+         <div class="navbar navbar-default navbar-fixed-top">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+         </div>
+         <div class="container">
+           		<center>
+           			<h1>Information Sent!</h1>
+           		</center>
+           		
+           		<center>
+           		    <img  width="50%" src="./assets/images/sent.png">
+           		</center>
+            <a href="index.html"><button type="button" ui-sref="/index" class="btn btn-primary btn-block">Home</button></a>
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- Page Content -->
+      <!-- /.container -->
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="src/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+
+      <!-- ClockPicker script -->
+<script type="text/javascript" src="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
+
+<script type="text/javascript">
+$('.clockpicker').clockpicker()
+    .find('input').change(function(){
+        // TODO: time changed
+        console.log(this.value);
+    });
+$('#demo-input').clockpicker({
+    autoclose: true
+});
+
+if (something) {
+    // Manual operations (after clockpicker is initialized).
+    $('#demo-input').clockpicker('show') // Or hide, remove ...
+            .clockpicker('toggleView', 'minutes');
+}
+</script>
+   </body>
+</html>
