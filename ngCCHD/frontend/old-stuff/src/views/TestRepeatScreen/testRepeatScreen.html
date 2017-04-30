@@ -1,0 +1,43 @@
+<div>
+<form>
+ <fieldset class="scheduler-border">
+  <legend class="scheduler-border">Initial Screen</legend>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Time of screen</p>
+            <div class="input-group bootstrap-timepicker timepicker">
+                <input id="timepicker1" type="text" class="form-control input-small">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+            </div>
+
+            <script type="text/javascript">
+                $('#timepicker1').timepicker();
+            </script>
+        </div>
+        <div class="col-sm-4 control-group">
+            <form>
+            <div class="form-group">
+            <label class="control-label input-label" for="R_hand">R Hand:</label>
+            <input type="text" class="form-control" id="R_hand_id">
+            <label>Foot:</label>
+            <input type="text" class="form-control" id="foot_id">
+            </div>
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <form>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Pass</label><br><br>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Repeat</label><br><br>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="" >Refer</label>
+                </div>
+            </form>
+        </div>
+    </div>
+ </fieldset>
+</form>
+</div>
