@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html class lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>The Big Picture - Start Bootstrap Template</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/the-big-picture.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="../node_modules/lockr/lockr.min.js"></script>
-    <script src="bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
-    <link rel="stylesheet" href="src/lib/jasny-bootstrap/css/jasny-bootstrap.min.css">
-    <!-- Custom styles for this template -->
-    <link href="css/navmenu-reveal.css" rel="stylesheet">
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <div class="navmenu navmenu-inverse navmenu-default navmenu-fixed-left">
-      <a class="navmenu-brand" href="#">Critical Cogenital Heart Disease Screening System</a>
-      <ul class="nav navmenu-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Devices</a></li>
-      </ul>
-    </div>
-
-    <div class="canvas">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+   <!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>The Big Picture - Start Bootstrap Template</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/the-big-picture.css" rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script src="../node_modules/lockr/lockr.min.js"></script>
+      <script src="bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+      <link rel="stylesheet" href="src/lib/jasny-bootstrap/css/jasny-bootstrap.min.css">
+      <!-- Custom styles for this template -->
+      <link href="css/navmenu-reveal.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.css">
+      <script type="text/javascript">
+         $(document).ready(function () {
+             $('#timepicker1').timepicker();
+         })
+      </script>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <div class="navmenu navmenu-inverse navmenu-default navmenu-fixed-left">
+         <a class="navmenu-brand" href="#">Critical Cogenital Heart Disease Screening System</a>
+         <ul class="nav navmenu-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Devices</a></li>
+         </ul>
       </div>
-
-      <div class="container">
-        <div class="page-header">
-          <h1>Screening</h1>
-        </div>
-
-       <div class="row">
-            <div class="col-sm-4">
-                <p>Time of screen</p>
-                 <div class="input-group clockpicker">
-                      <input type="text" class="form-control">
-                      <span class="input-group-addon">
-                          <span class="glyphicon glyphicon-time"></span>
-                      </span>
+      <div class="canvas">
+         <div class="navbar navbar-default navbar-fixed-top">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+         </div>
+         <div class="container">
+            <div class="page-header">
+               <h1>Screening</h1>
+            </div>
+            <div class="panel panel-default">
+               <div class="panel-heading"><b>First Screening</b></div>
+               <div class="panel-body">
+                  <div class="row">
+                     <div class="col-sm-4">
+                        <div class="form-group">
+                           <label>Time of screen</label>
+                           <div class="input-group clockpicker">
+                              <input type="text" class="form-control">
+                              <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-time"></span>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 control-group">
+                        <form>
+                           <div class="form-group">
+                              <label>Right Hand</label>
+                              <div class="input-group">
+                                 <input type="text" class="form-control"  aria-describedby="basic-addon2">
+                                 <span class="input-group-addon" id="basic-addon2">%</span>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label>Foot</label>
+                              <div class="input-group">
+                                 <input type="text" class="form-control" aria-describedby="basic-addon2">
+                                 <span class="input-group-addon" id="basic-addon2">%</span>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="col-sm-4">
+                        <form>
+                           <div class="checkbox">
+                              <label><input type="checkbox" value="">Pass</label><br><br>
+                           </div>
+                           <div class="checkbox">
+                              <label><input type="checkbox" value="">Repeat</label><br><br>
+                           </div>
+                           <div class="checkbox">
+                              <label><input type="checkbox" value="" >Refer</label>
+                           </div>
+                        </form>
+                     </div>
                   </div>
+               </div>
+               <!-- /.container -->
             </div>
-            <div class="col-sm-4 control-group">
-                <form>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Right Hand" aria-describedby="basic-addon2">
-                            <span class="input-group-addon" id="basic-addon2">%</span>
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Foot" aria-describedby="basic-addon2">
-                            <span class="input-group-addon" id="basic-addon2">%</span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-sm-4">
-                <form>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">Pass</label><br><br>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">Repeat</label><br><br>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="" >Refer</label>
-                    </div>
-                </form>
-            </div>
-        </div>
-      </div><!-- /.container -->
-    </div>
-
-    <!-- Page Content -->
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-     <script src="src/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
-
-           <!-- ClockPicker script -->
-     <script type="text/javascript" src="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
-
-     <script type="text/javascript">
-     $('.clockpicker').clockpicker()
-         .find('input').change(function(){
-             // TODO: time changed
-             console.log(this.value);
+         </div>
+      </div>
+      <!-- Page Content -->
+      <!-- /.container -->
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="src/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+      <!-- ClockPicker script -->
+      <script type="text/javascript" src="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
+      <script type="text/javascript">
+         $('.clockpicker').clockpicker()
+             .find('input').change(function(){
+                 // TODO: time changed
+                 console.log(this.value);
+             });
+         $('#demo-input').clockpicker({
+             autoclose: true
          });
-     $('#demo-input').clockpicker({
-         autoclose: true
-     });
-
-     if (something) {
-         // Manual operations (after clockpicker is initialized).
-         $('#demo-input').clockpicker('show') // Or hide, remove ...
-                 .clockpicker('toggleView', 'minutes');
-     }
-     </script>
-</body>
-
+         
+         if (something) {
+             // Manual operations (after clockpicker is initialized).
+             $('#demo-input').clockpicker('show') // Or hide, remove ...
+                     .clockpicker('toggleView', 'minutes');
+         }
+      </script>
+   </body>
 </html>
