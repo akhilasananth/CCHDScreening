@@ -30,12 +30,6 @@
     <link rel="stylesheet" href="src/lib/jasny-bootstrap/css/jasny-bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="css/navmenu-reveal.css" rel="stylesheet">
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#timepicker1').timepicker();
-        })
-    </script>
-
 </head>
 
 <body>
@@ -60,26 +54,31 @@
 
       <div class="container">
         <div class="page-header">
-          <h1>Initial Screen</h1>
+          <h1>Screening</h1>
         </div>
 
        <div class="row">
             <div class="col-sm-4">
                 <p>Time of screen</p>
-                <div class="input-group bootstrap-timepicker timepicker">
-                    <input id="timepicker1" type="text" class="form-control input-small">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-                </div>
-
-
+                 <div class="input-group clockpicker">
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                  </div>
             </div>
             <div class="col-sm-4 control-group">
                 <form>
                     <div class="form-group">
-                        <label class="control-label input-label" for="R_hand">R Hand:</label>
-                        <input type="text" class="form-control" id="R_hand_id">
-                        <label>Foot:</label>
-                        <input type="text" class="form-control" id="foot_id">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Right Hand" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">%</span>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Foot" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">%</span>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -109,6 +108,26 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
      <script src="src/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+
+           <!-- ClockPicker script -->
+     <script type="text/javascript" src="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
+
+     <script type="text/javascript">
+     $('.clockpicker').clockpicker()
+         .find('input').change(function(){
+             // TODO: time changed
+             console.log(this.value);
+         });
+     $('#demo-input').clockpicker({
+         autoclose: true
+     });
+
+     if (something) {
+         // Manual operations (after clockpicker is initialized).
+         $('#demo-input').clockpicker('show') // Or hide, remove ...
+                 .clockpicker('toggleView', 'minutes');
+     }
+     </script>
 </body>
 
 </html>
