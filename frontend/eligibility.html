@@ -64,7 +64,7 @@
                         <h3 style="margin-top: 0px !important; margin-bottom: 0px !important;">Reasons Screen Not Done<br /><small>(Check Box that Applies)</small></h3>
                      </label>
                      <div class="checkbox">
-                        <label> <input type="checkbox" name="declineOrDeffered" data-toggle="modal" data-target="#parentConsentModal"> Decline/deferred (Complete Decline / Defer Form))</label>
+                        <label> <input type="checkbox" name="declineOrDeffered"> Decline/deferred (Complete Decline / Defer Form))</label>
                        </div><div class="checkbox">
                         <label>
                         <input type="checkbox" name="Over7Days"> Infant in NICU/SCN/PICU over 7 days
@@ -80,25 +80,27 @@
                      </div>
                   </div>
                </div>
-               <button id="b1" type="button" class="btn btn-primary btn-block">Next</button>
-            </form>
-            <div class="modal fade" id="parentConsentModal" role="dialog">
-               <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
+               <div class="modal" id="parentConsentModal" tabindex="-1" role="dialog">
+                 <div class="modal-dialog">
+                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Parent Consent Form</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                       <h4 class="modal-title">Parent Consent Form</h4>
                      </div>
                      <div class="modal-body">
-                        <p>Some text in the modal.</p>
+                       <p>Some text in the modal.</p>
                      </div>
                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                       <button type="button" class="btn btn-default" data-dismiss="modal">I disagree</button>
+                       <button type="button" class="btn btn-primary">I agree</button>
                      </div>
-                  </div>
-               </div>
-            </div>
+                   </div><!-- /.modal-content -->
+                 </div><!-- /.modal-dialog -->
+               </div><!-- /.modal -->
+
+               <button id="b1" type="button" class="btn btn-primary btn-block">Next</button>
+            </form>
+
          </div>
          <!-- /.container -->
       </div>
@@ -110,11 +112,13 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="src/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
       <script type="text/javascript">
+
          $(document).ready(function(){
          $('input[type="radio"]').click(function(){
          var inputValue = $(this).attr("value");
          var targetBox = $("." + inputValue);
          $(".box").not(targetBox).hide();
+
          $(targetBox).show();
          });
          
@@ -128,6 +132,8 @@
          
              })
          });
+
+
       </script>
    </body>
 </html>
