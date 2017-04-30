@@ -6,11 +6,11 @@
 
 
 # Pitch
-* Newborn Screening Ontario has started screening the 150,000 babies
-  born each year for Critical Congenital Heart Disease
-  Screening. Currently the program uses hand written forms and snail
+* Newborn Screening Ontario has started screening the almost 150,000
+  babies born in Ontario each year for Critical Congenital Heart
+  Disease. Currently the program uses hand written forms and snail
   mail to ensure that screening has been completed and completed
-  correctly. Errors in the current process can and do happen.
+  correctly. The risk of errors and delays in the current process is high.
 
 * We have created a mobile application that:
     * Replaces the paper forms
