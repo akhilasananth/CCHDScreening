@@ -23,14 +23,13 @@
       <!-- Custom styles for this template -->
       <link href="css/navmenu-reveal.css" rel="stylesheet">
       <style type="text/css">
-        .box{
-            padding: 20px;
-            display: none;
-            margin-top: 20px;
-        }
-    </style>
-       <script>
-       </script>
+         .box{
+         padding: 20px;
+         display: none;
+         margin-top: 20px;
+         }
+      </style>
+      <script></script>
    </head>
    <body>
       <div class="navmenu navmenu-inverse navmenu-default navmenu-fixed-left">
@@ -53,25 +52,32 @@
                <h1>Eligibility</h1>
             </div>
             <form>
-            <label><input type="radio" name="eligible" value="yes"> Yes</label>
-            <label><input type="radio" name="eligible" value="no"> No</label>
-            <div class="no box">
-                <strong>Reasons Screen Not Done</strong>
-                <br>
-                (Check Box that Applies)
-                   <input type="checkbox" name="declineOrDeffered" data-toggle="modal" data-target="#parentConsentModal"> Decline/deferred (Complete Decline / Defer Form))
-                   <br>
-                   <input type="checkbox" name="Over7Days"> Infant in NICU/SCN/PICU over 7 days
-                   <br>
-                   <input type="checkbox" name="diagnosedPrenatally">Infant diagnosed prenatally with heart defect
-                   <br>
-                   <input type="checkbox" name="diagnosedByPhysicalExam">Infant diagnosed with heart defect by physical exam
-                   <br>
-                   <input type="checkbox" name="other">Other(ex. limb anomaly). Specify:
-                   <br>
-                   <textarea name="paragraph_text" cols="50" rows="10"></textarea>
-            </div>
-            <button id="b1" type="button" class="btn btn-primary btn-block">Next</button>
+               <label><input type="radio" name="eligible" value="yes"> Yes</label>
+               <label><input type="radio" name="eligible" value="no"> No</label>
+               <br/><br/>
+               <div class="no box well" style="margin-top:0px !important;">
+                  <div class="form-group">
+                     <label for="HCard">
+                        <h3>Reasons Screen Not Done <small>(Check Box that Applies)</small></h3>
+                     </label>
+                     <div class="checkbox">
+                        <label> <input type="checkbox" name="declineOrDeffered" data-toggle="modal" data-target="#parentConsentModal"> Decline/deferred (Complete Decline / Defer Form))</label>
+                        <br/>
+                        <label>
+                        <input type="checkbox" name="Over7Days"> Infant in NICU/SCN/PICU over 7 days
+                        </label> <br/><label>
+                        <input type="checkbox" name="diagnosedPrenatally">Infant diagnosed prenatally with heart defect
+                        </label> <br/><label>
+                        <input type="checkbox" name="diagnosedByPhysicalExam">Infant diagnosed with heart defect by physical exam
+                        </label> <br/><label>
+                        <input type="checkbox" name="other">Other(ex. limb anomaly). Specify:
+                        </label>
+                        <br/>
+                        <textarea name="paragraph_text"  class="form-control" cols="50" rows="10"></textarea>
+                     </div>
+                  </div>
+               </div>
+               <button id="b1" type="button" class="btn btn-primary btn-block">Next</button>
             </form>
             <div class="modal fade" id="parentConsentModal" role="dialog">
                <div class="modal-dialog">
@@ -100,25 +106,25 @@
       <!-- Bootstrap Core JavaScript -->
       <script src="js/bootstrap.min.js"></script>
       <script src="src/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
-        <script type="text/javascript">
-                $(document).ready(function(){
-            $('input[type="radio"]').click(function(){
-                var inputValue = $(this).attr("value");
-                var targetBox = $("." + inputValue);
-                $(".box").not(targetBox).hide();
-                $(targetBox).show();
-            });
-
-                    $("#b1").click(function () {
-                        if($('input:radio[name=eligible]')[0].checked){
-                            window.location.href = "repeat-test.html";
-                        }
-                        else {
-                            window.location.href = "index.html";
-                        }
-
-                    })
-        });
-        </script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+         $('input[type="radio"]').click(function(){
+         var inputValue = $(this).attr("value");
+         var targetBox = $("." + inputValue);
+         $(".box").not(targetBox).hide();
+         $(targetBox).show();
+         });
+         
+             $("#b1").click(function () {
+                 if($('input:radio[name=eligible]')[0].checked){
+                     window.location.href = "repeat-test.html";
+                 }
+                 else {
+                     window.location.href = "index.html";
+                 }
+         
+             })
+         });
+      </script>
    </body>
 </html>
