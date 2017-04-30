@@ -1,0 +1,59 @@
+<div class="ui container">
+    <div class="ui row">
+
+        <div id="firstCheck">
+            <h4 class="ui dividing header">Initial screen: </h4>
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <label>R hand</label>
+                        <input
+                                type="text"
+                                placeholder="R hand"
+                                (onChange)="firstHand">
+                    </div>
+                    <div class="field">
+                        <label>Foot</label>
+                        <input type="text" placeholder="Foot">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="secondCheck" *ngIf="hasSecondCheck">
+            <h4 class="ui dividing header">First repeat: </h4>
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <label>R hand</label>
+                        <input type="text" placeholder="R hand">
+                    </div>
+                    <div class="field">
+                        <label>Foot</label>
+                        <input type="text" placeholder="Foot">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="thirdCheck" *ngIf="hasThirdCheck">
+            <h4 class="ui dividing header">Second repeat: </h4>
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <label>R hand</label>
+                        <input type="text" placeholder="R hand">
+                    </div>
+                    <div class="field">
+                        <label>Foot</label>
+                        <input type="text" placeholder="Foot">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </div>
+</div>
+
+
+
