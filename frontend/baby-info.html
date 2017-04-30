@@ -23,11 +23,7 @@
       <!-- Custom styles for this template -->
       <link href="css/navmenu-reveal.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.css">
-     <script type="text/javascript">
-         $(document).ready(function () {
-             $('#timepicker1').timepicker();
-         })
-     </script>
+
    </head>
    <body>
       <div class="navmenu navmenu-inverse navmenu-default navmenu-fixed-left">
@@ -50,13 +46,16 @@
                <h1>Baby Information</h1>
             </div>
             <form>
-               Last Name: <input type="text" name="babyLName">
-               <br>
-               <br>
-               First Name: <input type="text" name="babyFName">
-               <br>
-               <br>
-               Multiple Birth:
+               <div class="form-group"> 
+                  <label for="LName">Last Name</label>  
+                  <input type="text" class="form-control" formname="babyLName">
+               </div>
+               <div class="form-group"> 
+                  <label for="FName">First Name</label>  
+                  <input type="text"  class="form-control" name="babyFName">
+                </div>
+               <div class="form-group"> 
+                  <label for="MBirth">Multiple Birth</label>
                <select>
                   <option value="NotApplicable">N/A</option>
                   <option value="A">A</option>
@@ -66,36 +65,36 @@
                   <option value="E">E</option>
                   <option value="F">F</option>
                </select>
-               <br>
-               <br>
-               Health Card Number: 
-               <input type="text" class="form-control" data-mask="9999-999-999" placeholder="####-###-###">
-               <br>
-               <br>
-               Sex:
+               </div> 
+               <div class="form-group"> 
+                  <label for="HCard">Health Card Number</label>
+                  <input type="text" class="form-control" data-mask="9999-999-999" placeholder="####-###-###">
+               </div>   
+               <div class="form-group">
+                  <label for="Sex">Sex</label>
                <select>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                </select>
-               <br>
-               <br>
-               Birth Date: <input type="date" name="birthDate">
-               <br>
-               <br>
-               Birth Time:
-               <div class="input-group clockpicker">
-                    <input type="text" class="form-control">
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </span>
-                </div>
-
-               <br>
-               <br>
-               Submitter Unique Number: <input type="text" name="submitterUniqueNumber">
+               </div>
+               <div class="form-group">
+                  <label for=BDate>Birth Date</label>
+                  <input type="date"  class="form-control" name="birthDate">
+               </div>
+               <div class="form-group">
+                  <label for=BTime>Birth Time</label>
+                  <div class="input-group clockpicker">
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for=SubmitterUID>Submitter Unique Number</label>
+                  <input type="text"  class="form-control" name="submitterUniqueNumber">
+               </div>
             </form>
-            <br>
-            <br>
             <a href="hospital-info.html"><button type="button" ui-sref="/hospitalInformation" class="btn btn-primary btn-block">Next</button></a>
          </div>
          <!-- /.container -->
