@@ -91,4 +91,9 @@ function Goal(name, val, type, currentVal, isComplete){
         this.isComplete = isComplete;
     }
 }
+function Patient(lastName, firstName, healthCard, gender, dob, birthTime, submitterNumber) {
+    this.lastName = lastName;
+    this.firstName = firstName;
+    this.heathCard = healthCard;
+}
 initStorage();
