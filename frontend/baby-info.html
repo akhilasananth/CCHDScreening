@@ -114,20 +114,11 @@
 <script type="text/javascript" src="src/lib/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
 
 <script type="text/javascript">
-$('.clockpicker').clockpicker()
-    .find('input').change(function(){
-        // TODO: time changed
-        console.log(this.value);
-    });
-$('#demo-input').clockpicker({
-    autoclose: true
+$('.clockpicker').clockpicker({
+    placement: 'top',
+    align: 'left',
+    donetext: 'Done'
 });
-
-if (something) {
-    // Manual operations (after clockpicker is initialized).
-    $('#demo-input').clockpicker('show') // Or hide, remove ...
-            .clockpicker('toggleView', 'minutes');
-}
 </script>
    </body>
 </html>
